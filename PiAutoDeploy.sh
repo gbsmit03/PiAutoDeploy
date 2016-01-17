@@ -11,7 +11,7 @@ fi
 if [ "$5" = "clean" ]
 then
     echo ""
-	echo "Cleaning pibo project on PI"
+	echo "Cleaning project on PI"
 	ssh "$3"@"$4" rm -fr "$5"
 	echo "Redeploy project to PI"
 	echo ""
