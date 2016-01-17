@@ -29,4 +29,4 @@ else
 	echo "invaild args"
 fi
 
-echo "Thank you for using PiAutoDeploy please help make me better at."
+echo "Thank you for using PiAutoDeploy please help make me better at https://github.com/gbsmit03/PiAutoDeploy."
