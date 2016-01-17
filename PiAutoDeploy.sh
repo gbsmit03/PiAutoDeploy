@@ -12,7 +12,7 @@ if [ "$5" = "clean" ]
 then
     echo ""
 	echo "Cleaning pibo project on PI"
-	ssh pi@192.168.2.10 rm -fr "~/projects/pibo"
+	ssh "$3"@"$4" rm -fr "$5"
 	echo "Redeploy project to PI"
 	echo ""
 	scp -rp "$1" "$3"@"$4":"$5"
