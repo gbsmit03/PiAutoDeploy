@@ -15,7 +15,7 @@ then
 	ssh "$3"@"$4" rm -fr "$5"
 	echo "Redeploy project to PI"
 	echo ""
-	scp -rp "$1" "$3"@"$4":"$5"
+	scp -rp "$1" "$3"@"$4":"$2"
 	echo ""
 	echo ""
 fi
@@ -24,7 +24,7 @@ if [ "$1" ] &&  [ "$2" ] && [ "$3" ] && [ "$4" ]
 then
     echo ""
 	echo "Start file watch.."
-	when-changed "$1" -v -c scp -rp "$1" "$3"@"$4":"$5"
+	when-changed "$1" -v -c scp -rp "$1" "$3"@"$4":"$2"
 else
 	echo "invaild args"
 fi
